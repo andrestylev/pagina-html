@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Targaryens dragons</title>       
+        <link rel="stylesheet" href="./StylesGOT.css">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+            <section id="seleccionar-dragon"> 
+                <h1 class="title"> TARGARYENS DRAGONS 🐉🔥</h1>
+                <h2 class="subtitle"> Escoge tu dragon: </h2>
+
+                <div id="tarjetasContenedor" class="tarjetas">                   
+                                       
+                </div>
+
+                     <h4> <button id="boton-dragon">Elegir</button> </h4>
+
+                     <section id="description">
+                        <h3>The dragons: </h3>
+                        <p> CARAXES: El dragon del principe daemon, tiene un color rojo vibrante </p> 
+                        <p> VHAGAR: La dragona anciana de aemon, su color es verde grisaceo</p> 
+                        <p> SYRAX: El dragon de la reina raenyra, su color es un dorado medio oscuro</p>
+
+                   </section>
+
+            </section>
+
+            <section id="show-map">
+                <h1 class="title">Recorre el Mapa con tu Dragon</h1>
+                <canvas id="map"></canvas>
+               
+                <button onmouseup="detenerMoviento()"    onmousedown="moveUp()" ontouchend="detenerMoviento()"    ontouchstart="moveUp()"> Arriba </button>                
+
+             <div id="directionbuttons">
+                <button onmouseup="detenerMoviento()"    onmousedown="moveLeft()"  ontouchend="detenerMoviento()"    ontouchstart="moveLeft()"> Izquierda </button>
+
+                <button onmouseup="detenerMoviento()"    onmousedown="moveDown()" ontouchend="detenerMoviento()"    ontouchstart="moveDown()"> Abajo </button>
+                
+                <button onmouseup="detenerMoviento()"    onmousedown="moveRight()" ontouchend="detenerMoviento()"    ontouchstart="moveRight()"> Derecha </button>
+                 
+                
+            </div>
+            </section>
+                    
+            <section  id="seleccionar-ataque">
+                <h1 class="title"> TARGARYENS DRAGONS 🐉🔥</h1>
+ 
+                <h2 class="second-title"> Escoge tu ataque:</h2>
+
+                <div id="ataques-contenedor" class="ataques-boxes">
+                             
+                </div>
+
+                <h3>Descenlace del combate:</h3> 
+            <div>
+                
+
+                <section id="mensajes"> En las afueras de kingsLanding
+                    <p id="resultado">Avistamiento de la batalla:</p> 
+
+                    <div class="boton-tryagain">                       
+                    <p> <button id="boton-reiniciar"> Try again </button> </p>              
+                    </div>
+                </section>
+
+                <section id="Reinicia"> 
+                    
+            </div>
+
+            <div class="cronologia-batalla">
+
+                <div class="cronologia-jugador">
+                    <p id="player-dragon"></p>
+                     <p id ="player-lifes">0</p>
+                    <div id="ataque-jugador"></div>
+                     
+                </div>
+
+                <div class="cronologia-enemigo">               
+                    <p id="enemy-dragon"></p>
+                    <p id="enemy-lifes">0</p>
+                    <div id="ataque-enemigo"></div>         
+                </div>        
+            </div>   
+        </section>
+        <script src="./DragonsGOT.js"></script>         
+    </body>
+</html>

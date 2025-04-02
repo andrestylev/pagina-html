@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Rosarivo:ital@1&display=swap');
+     
+    body{
+    font-family: 'Rosarivo', cursive;
+    background-image: linear-gradient(218deg, red, rgb(0 16 183));
+    }
+  /* Primera Pagina */
+
+     #seleccionar-dragon {
+        display: flex;
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center ;
+        padding: 49px;
+        background-color: black;
+        margin-inline-start: 300px;
+        margin-inline-end: 300px;     
+          
+    }
+       
+    .title {
+        color: rgb(255, 1, 1) ;
+        background-color: black;
+        width: 460px;
+        height: 50px;
+        font-size:xx-large;
+        margin-inline-start: 0px;
+        margin-block-start: 50px;
+        margin-block-end :2cm ;
+        font-weight: 1;
+        padding: 40px;
+        margin: 10px;
+        border: 3px solid rgb(228, 5, 5);  
+        border-radius: 2px;
+    }
+
+    .subtitle {
+        color: rgb(232, 5, 5);
+        font-size: xx-large;
+
+    }
+
+    .tarjeta-dragon{
+        color: rgb(0, 0, 0);
+        width: 250px;
+        height: 160px;
+        background-color: #ff0037;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 10px;
+        border: 4px solid #f6ed00;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .tarjeta-dragon img {
+        width: 150px;
+    }
+
+   .tarjetas{
+    display: flex;
+
+   }
+
+    input {
+        display: none;
+    }  
+
+    input:checked + label{
+        background-color: rgb(255, 247, 0);
+    }
+
+
+    #boton-dragon {
+        color: rgb(238, 255, 0);
+        background-color: rgb(3, 3, 177);
+        width: 85px;
+        height: 56px;
+        margin-top: 30px;
+        font-size: x-large;
+        font-family: 'Playfair Display', serif;
+        border-radius: 15px;
+        border: 1px solid rgb(170, 170, 170);
+        cursor: pointer       
+    }
+
+    #description{
+        color: red;
+        background-color: rgb(0, 0, 0);
+        width: 540px;
+        height: 200px;
+        margin-inline-start: 12px;
+        margin-block-start: 40px;
+        padding: 10px;
+        border:1px solid red;
+    }
+
+    /*Segunda Pagina */
+
+    #show-map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+    }
+
+    #map {
+        border: 3px solid #7d0404;
+        margin-top: 20px;
+    }
+
+    #show-map button {
+        color:black ;
+        background-image: linear-gradient(45deg, red, rgb(255, 247, 0));
+        border: 1px solid black;
+        cursor: pointer;
+        font-family: 'Rosarivo', cursive;
+        font-size: 18px;
+        border-radius: 20px;
+        font-weight: 700;
+        width: 156px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box; 
+        margin: 5px;
+        user-select: none;
+    }
+
+    #directionbuttons{
+        color:black ;        
+        font-family: 'Rosarivo', cursive;
+        font-size: 18px;
+        border-radius: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        width: 446;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        user-select: none;
+    }
+
+    #seleccionar-ataque{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .second-title{
+        color: #1f1e00;
+        background-color:rgb(228, 5, 5) ;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .boton-ataque{
+        color:black ;
+        background-image: linear-gradient(45deg, red, rgb(255, 247, 0));
+        border: 1px solid black;
+        cursor: pointer;
+        font-family: 'Playfair Display', serif;
+        font-size: 18px;
+        border-radius: 20px;
+        font-weight: 700;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box; 
+    }
+    .ataques-boxes{
+        display: flex;
+        gap: 15px;
+    }
+
+    #mensajes{
+        background-color: #f6ed00;
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;        
+    }
+
+    #boton-reiniciar{
+       
+        height: 50px;
+        background-color: #ff0066;
+        box-sizing: border-box;
+        border: 2px solid rgb(0, 0, 0);
+        cursor: pointer;
+        font-family: 'Playfair Display', serif;
+        color: #f6ed00;
+        font-size: 18px;
+        padding: 10px;
+        font-style: italic;
+        
+    }
+
+    #resultado {
+        border: 5px solid red;
+       padding: 8px;
+        font-family:'Playfair Display', serif ;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 15px;
+    }
+
+    .cronologia-batalla{
+        display: grid;
+        grid-template-columns: 280px 280px;
+        column-gap: 50px;
+        background-color: #f6ed00;
+        padding: 20px;
+
+    }
+
+    #player-dragon, #enemy-dragon{
+        font-size: 24px;
+        color: #b70000;
+        font-weight: 700;
+    }
+
+    #player-lifes, #enemy-lifes{
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 700;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 5px;
+        background-color: #ff0066;
+        padding-top: 2px;
+    }
+
+    #ataque-jugador, #ataque-enemigo{
+    font-size: 17px;
+    font-weight: 700;
+    border: 2px solid #ef1d1d;
+    padding: 14px;
+    border: flex;
+    border-radius: 30px; 
+}
+
+    .cronologia-jugador, .cronologia-enemigo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+
+    @media (max-width: 450px){
+        .tarjetas, .ataques-boxes{
+            flex-direction: column;
+        }
+    }
+
+    @media(max-width: 420px) {
+        #show-map button, #directionbuttons   {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            
+        } }
